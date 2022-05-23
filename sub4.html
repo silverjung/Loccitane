@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sub4.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".sub_menu_list").click(function(e){
+                e.preventDefault();
+                $(this).addClass("on"); $(".sub_menu_list").not(this).removeClass("on");
+            });
+            $(".explan_num_list").click(function(e){
+                e.preventDefault();
+                $(this).addClass("on");
+                var idx = $(this).index(); $(".explan_num_list").not(this).removeClass("on");
+                $("li.treatment_list").eq(idx).addClass("on").siblings().removeClass("on");
+                 $("li.explan_img_list").eq(idx).addClass("on").siblings().removeClass("on");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://silverjung.github.io/loccitane/index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub1.html">록시땅 소개</a>
+                    <ul class="depth_2">
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅 약속</span><img src="images/nav1_1.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>뷰티 TIP</span><img src="images/nav1_2.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅의 원료</span><img src="images/nav1_3.jpg" alt=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub2.html">스킨케어</a>
+                    <ul class="depth_2">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">클렌져</a></li>
+                                <li><a href="#">토너</a></li>
+                                <li><a href="#">수분 &amp; 영양 크림</a></li>
+                                <li><a href="#">세럼 &amp; 오일</a></li>
+                                <li><a href="#">스크럽 &amp; 마스크</a></li>
+                                <li><a href="#">아이 케어 </a></li>
+                                <li><a href="#">자외선 차단제</a></li>
+                                <li><a href="#">미스트</a></li>
+                                <li><a href="#">립 케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav2_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">시어 라이트 컴포팅 크림 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub3.html">바디 &amp; 핸드케어</a>
+                    <ul class="depth_2">
+                        <li>
+                        <a href="#"><span>바디 케어</span><img src="images/nav3_1.jpg" alt=""></a>
+                        <a href="#"><span>핸드 케어</span><img src="images/nav3_2.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub4.html">헤어 케어</a>
+                    <ul class="depth_2 depth_hair">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">샴푸</a></li>
+                                <li><a href="#">컨디셔너</a></li>
+                                <li><a href="#">마스크 &amp; 트리트먼트</a></li>
+                                <li><a href="#">에코 리필</a></li>
+                                <li><a href="#">헤어 오일 &amp; 에센스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav4_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">아로마 리페어 샴푸 500ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub5.html">맨즈 케어</a>
+                    <ul class="depth_2 depth_man">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">스킨 케어</a></li>
+                                <li><a href="#">쉐이빙</a></li>
+                                <li><a href="#">배쓰 &amp; 샤워</a></li>
+                                <li><a href="#">바디 로션 &amp; 크림</a></li>
+                                <li><a href="#">향수</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav5_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">꺄드 에너자이징 페이스 플루이드 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub6.html">향수 &amp; 홈</a>
+                    <ul class="depth_2 per_depth">
+                        <li>
+                            <a href="#">
+                                <span>여성용 향수</span>
+                                <img src="images/nav6_1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>남성용 향수</span>
+                                    <img src="images/nav6_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>홈 컬렉션</span>
+                                <img src="images/nav6_3.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_ad">
+            <div class="main_ad_txt">
+                <h2>HAIR CARE</h2>
+                <p>록시땅의 아로마콜로지 헤어 케어는 5가지<br> 에센셜 오일을 함유하고 있어 모발 상태 및 고민에<br>따른 헤어 케어 솔루션을 제안합니다.</p>
+            </div>
+        </div>
+        <div class="sub_menu_box">
+            <ul>
+                <li class="sub_menu_list"><a href="#">샴푸</a></li>
+                <li class="sub_menu_list"><a href="#">컨디셔너</a></li>
+                <li class="sub_menu_list"><a href="#">마스크 &amp; 트리트먼트</a></li>
+                <li class="sub_menu_list"><a href="#">에코 리필</a></li>
+                <li class="sub_menu_list"><a href="#">헤어 오일 &amp; 에센스</a></li>
+            </ul>
+        </div>
+        <div class="best_menu">
+            <h3>Hair Care BEST SELLER</h3>
+            <ul class="best_menu_box">
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/hair_1.png" alt="">
+                        <span class="best_menu_txt">아로마 리페어 샴푸</span>
+                        <span class="best_menu_ml">100ml</span>
+                        <strong>&#8361;42,000</strong>
+                    </a></li>
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/hair_2.png" alt="">
+                        <span class="best_menu_txt">아로마 리페어 컨디셔너</span>
+                        <span class="best_menu_ml">50ml</span>
+                        <strong>&#8361;49,000</strong>
+                    </a></li>
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/hair_3.png" alt="">
+                        <span class="best_menu_txt">퓨리파잉 프레쉬니스 샴푸</span>
+                        <span class="best_menu_ml">50ml</span>
+                        <strong>&#8361;42,000</strong>
+                    </a>
+                </li>
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/hair_4.png" alt="">
+                        <span class="best_menu_txt">퓨리파잉 프레쉬니스 컨디셔너</span>
+                        <span class="best_menu_ml">100ml</span>
+                        <strong>&#8361;49,000</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="treatment">
+            <div class="treatment_cont">
+                <h3>Extremely Damaged Hair Treatment</h3>
+                <div class="explan">
+                    <ul>
+                        <li class="treatment_list"><span class="ex_time">DURING SHOWER</span>
+                            <span class="ex_product">아로마 리페어 헤어 마스크</span>
+                            <p>극손상된 모발에 집중적으로 영양을<br>공급하여주는 트리트먼트입니다.</p>
+                            <span class="ex_txt">*샴푸 후 젖은 모발에 고르게 도포하여 3-4분 후 헹구어냅니다.</span>
+                        </li>
+                        <li class="treatment_list"><span class="ex_time">BEFORE HAIR DRY</span>
+                            <span class="ex_product">리페어 인리치드 인퓨즈드 오일</span>
+                            <p>드라이 전 열로부터 모발을 보호해주고 고영양을 공급해주는 헤어 전용 오일입니다.</p>
+                            <span class="ex_txt">*드라이 전 모발에 골고루 도포하여줍니다.</span>
+                        </li>
+                        <li class="treatment_list"><span class="ex_time">AFTER HAIR DRY</span>
+                            <span class="ex_product">NEW 리페어 안티-프리즈 세럼</span>
+                            <p>끈적임 없는 세럼 텍스쳐로 부스스한 머리를<br>차분하게 정리하여 주며 스타일링 과정에서<br>고온의 열로부터 모발을 보호해줍니다. </p>
+                            <span class="ex_txt">*스타일링 전 또는 드라이 후 모발에 골고루 도포하여줍니다.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="explan_img">
+                    <ul class="explan_img_box">
+                        <li class="explan_img_list on">
+                            <img src="images/hair_5.png" alt="">
+                            <nav><a href="#">자세히 보기</a></nav>
+                        </li>
+                        <li class="explan_img_list">
+                            <img src="images/hair_6.png" alt="">
+                            <nav><a href="#">자세히 보기</a></nav>
+                        </li>
+                        <li class="explan_img_list">
+                            <img src="images/hair_7.png" alt="">
+                            <nav><a href="#">자세히 보기</a></nav>
+                        </li>
+                    </ul>
+                </div>
+                <div class="explan_list">
+                    <ul class="explan_box">
+                        <li class="explan_num_list on"><a href="#">1. DURING SHOWER</a></li>
+                        <li class="explan_num_list"><a href="#">2. BEFORE HAIR DRY</a></li>
+                        <li class="explan_num_list"><a href="#">3. AFTER HAIR DRY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="eco">
+            <h3>헤어와 환경, 모두를 위한 록시땅 에코 리필</h3>
+            <div class="eco_img">
+                <img src="images/hair_8.png" alt=""></div>
+            <div class="eco_txt">
+                <span>환경과 사람을 생각하는 착한 소비, 에코 리필</span>
+                <p>손상 모발로 고민이신 분들을 위한 록시땅의 헤어 케어 솔루션!<br>환경과 사람을 생각하는 에코 리필로<br>아로마 리페어 헤어 라인을 더욱 특별하게 만나보세요!</p>
+                <a href="#">보러가기</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
