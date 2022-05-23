@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sub2.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".sub_menu_list").click(function(e){
+                e.preventDefault();
+                $(this).addClass("on"); $(".sub_menu_list").not(this).removeClass("on");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://silverjung.github.io/loccitane/index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub1.html">록시땅 소개</a>
+                    <ul class="depth_2">
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅 약속</span><img src="images/nav1_1.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>뷰티 TIP</span><img src="images/nav1_2.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅의 원료</span><img src="images/nav1_3.jpg" alt=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub2.html">스킨케어</a>
+                    <ul class="depth_2">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">클렌져</a></li>
+                                <li><a href="#">토너</a></li>
+                                <li><a href="#">수분 &amp; 영양 크림</a></li>
+                                <li><a href="#">세럼 &amp; 오일</a></li>
+                                <li><a href="#">스크럽 &amp; 마스크</a></li>
+                                <li><a href="#">아이 케어 </a></li>
+                                <li><a href="#">자외선 차단제</a></li>
+                                <li><a href="#">미스트</a></li>
+                                <li><a href="#">립 케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav2_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">시어 라이트 컴포팅 크림 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub3.html">바디 &amp; 핸드케어</a>
+                    <ul class="depth_2">
+                        <li>
+                        <a href="#"><span>바디 케어</span><img src="images/nav3_1.jpg" alt=""></a>
+                        <a href="#"><span>핸드 케어</span><img src="images/nav3_2.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub4.html">헤어 케어</a>
+                    <ul class="depth_2 depth_hair">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">샴푸</a></li>
+                                <li><a href="#">컨디셔너</a></li>
+                                <li><a href="#">마스크 &amp; 트리트먼트</a></li>
+                                <li><a href="#">에코 리필</a></li>
+                                <li><a href="#">헤어 오일 &amp; 에센스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav4_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">아로마 리페어 샴푸 500ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub5.html">맨즈 케어</a>
+                    <ul class="depth_2 depth_man">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">스킨 케어</a></li>
+                                <li><a href="#">쉐이빙</a></li>
+                                <li><a href="#">배쓰 &amp; 샤워</a></li>
+                                <li><a href="#">바디 로션 &amp; 크림</a></li>
+                                <li><a href="#">향수</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav5_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">꺄드 에너자이징 페이스 플루이드 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub6.html">향수 &amp; 홈</a>
+                    <ul class="depth_2 per_depth">
+                        <li>
+                            <a href="#">
+                                <span>여성용 향수</span>
+                                <img src="images/nav6_1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>남성용 향수</span>
+                                    <img src="images/nav6_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>홈 컬렉션</span>
+                                <img src="images/nav6_3.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_ad"></div>
+        <div class="ad_ex">
+            <h1>SKIN CARE</h1>
+            <p>자연을 담은 아름다움은 L’OCCITANE의 철학입니다.<br>
+                안티에이징을 위한 이모르뗄 라인부터 탄탄한 보습의 시어 라인까지<br>
+                다양한 피부 타입에 맞는 스킨 케어 라인을 록시땅에서 만나보세요.</p>
+        </div>
+        <div class="sub_menu_box">
+            <ul>
+                <li class="sub_menu_list"><a href="#">클렌져</a></li>
+                <li class="sub_menu_list"><a href="#">토너</a></li>
+                <li class="sub_menu_list"><a href="#">수분 &amp; 영양 크림</a></li>
+                <li class="sub_menu_list"><a href="#">세럼 &amp; 오일</a></li>
+                <li class="sub_menu_list"><a href="#">스크럽 &amp; 마스크</a></li>
+                <li class="sub_menu_list"><a href="#">아이 케어 </a></li>
+                <li class="sub_menu_list"><a href="#">자외선 차단제</a></li>
+                <li class="sub_menu_list"><a href="#">미스트</a></li>
+                <li class="sub_menu_list"><a href="#">립 케어</a></li>
+            </ul>
+        </div>
+        <div class="skina">
+            <h2>SKIN CARE</h2>
+        </div>
+        <div class="best">
+            <div class="b_m">
+                <h3><span>BEST</span>SET</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="white">
+                                <img src="images/b_set1.png" alt="">
+                            </span>
+                            <span class="best_txt">리셋 30ml 세트</span>
+                            <p>이모르뗄 오버나이트 리셋 오일 인 세럼 30ml<br>
+                                디바인 크림 8ml + 록시땅 파우치 </p>
+                            <p>&#8361;87,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="white">
+                                <img src="images/b_set2.png" alt="">
+                            </span>
+                            <span class="best_txt">리셋 아이 케어 세트</span>
+                            <p>이모르뗄 리셋 아이 세럼 15ml<br>
+                                에센셜 워터 페이스 30ml + 리셋 세럼 5ml</p>
+                            <p>&#8361;80,000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="white">
+                                <img src="images/b_set3.png" alt="">
+                            </span>
+                            <span class="best_txt">디바인 지니어스 크림 세트</span>
+                            <p>크림 50ml + 아이 밤 4ml + 로션 30ml<br>
+                                리셋 오일 인 세럼 5ml + 록시땅 파우치</p>
+                            <p>&#8361;160,000</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_ex">
+            <div class="ex1">
+                <h4>렌느 블랑쉬</h4>
+                <div class="cont">
+                    <div class="l_img">
+                        <img src="images/sub2_1.png" alt="">
+                        <div class="w_box">
+                            <span>순백의 꽃에서 찾은<br>순수한 화이트닝</span>
+                            <p>시간이 흐를수록 눈부시게 빛나는 유기농 렌느 데프레 (Reine des Pres)를 그대로 담은 렌느 블랑쉬 화이트닝<br>프로그램이 효과적인 화이트닝 케어를 선사합니다.</p>
+                            <a href="#">보러가기</a>
+                        </div>
+                    </div>
+                    <div class="goods">
+                        <ul>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_1_1.png" alt="">
+                                    <span>렌느 블랑쉬 화이트 인퓨전 세럼</span>
+                                    <p>&#8361;99,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_1_2.png" alt="">
+                                    <span>렌느 블랑쉬 화이트 인퓨전 크림</span>
+                                    <p>&#8361;90,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_1_3.png" alt="">
+                                    <span>렌느 블랑쉬 인텐스 폼</span>
+                                    <p>&#8361;45,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_1_4.png" alt="">
+                                    <span>렌느 블랑쉬 스팟 케어 듀오</span>
+                                    <p>&#8361;99,000</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ex2">
+                <h4>이모르뗄 디바인</h4>
+                <div class="cont">
+                    <div class="goods">
+                        <ul>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_2_1.png" alt="">
+                                    <span>이모르뗄 디바인 크림</span>
+                                    <p>&#8361;80,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_2_2.png" alt="">
+                                    <span>이모르뗄 디바인 세럼</span>
+                                    <p>&#8361;160,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_2_3.png" alt="">
+                                    <span>이모르뗄 디바인 유스 오일</span>
+                                    <p>&#8361;150,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_2_4.png" alt="">
+                                    <span>이모르뗄 디바인 액티베이팅 에센스</span>
+                                    <p>&#8361;69,000</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="r_img">
+                        <img src="images/sub2_2.png" alt="">
+                        <div class="w_box">
+                            <span>속부터 차오르는 피부 볼륨감 </span>
+                            <p>자연에서 얻은 안티에이징 원료, NEW 이모르뗄 슈퍼 익스트렉트 성분 함유로 탄력, 그리고 피부 볼륨감까지 달라진 피부를 경험해보세요.</p>
+                            <a href="#">보러가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ex3">
+                <h4>이모르뗄 리셋 오일 인 세럼</h4>
+                <div class="cont">
+                    <div class="l_img">
+                        <img src="images/sub2_3.jpg" alt="">
+                        <div class="w_box">
+                            <span>록시땅 스킨케어 베스트셀러</span>
+                            <p>1분에 1개씩 판매되는 록시땅의 스킨케어 베스트셀러로, 5천 여개의 캡슐과 고보습 오일이 녹아든 듀얼 텍스처가 피부 본연의 빛을 채워주어 다음날 아침 건강하고 리셋된 피부 컨디션으로 만들어줍니다.</p>
+                            <a href="#">보러가기</a>
+                        </div>
+                    </div>
+                    <div class="goods">
+                        <ul>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_3_1.png" alt="">
+                                    <span>이모르뗄 리셋 오일 인 세럼</span>
+                                    <p>&#8361;123,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_3_2.png" alt="">
+                                    <span>이모르뗄 오버나이트 리셋 오일 인 세럼</span>
+                                    <p>&#8361;87,000</p>
+                                </a></li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_3_3.png" alt="">
+                                    <span>리셋 아이 케어 세트 </span>
+                                    <p>&#8361;80,000</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ex4">
+                <h4>아쿠아 레오티에</h4>
+                <div class="cont">
+                    <div class="goods">
+                        <ul>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_4_1.png" alt="">
+                                    <span>아쿠아 레오티에 울트라 서스트 퀀치 젤</span>
+                                    <p>&#8361;42,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_4_2.png" alt="">
+                                    <span>아쿠아 레오티에 울트라서스트 퀀치 크림 </span>
+                                    <p>&#8361;42,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_4_3.png" alt="">
+                                    <span>아쿠아 레오티에모이스처 프렙 에센스</span>
+                                    <p>&#8361;35,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_4_4.png" alt="">
+                                    <span>아쿠아 레오티에 워터 젤 클렌저</span>
+                                    <p>&#8361;32,000</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="r_img">
+                        <img src="images/sub2_4.png" alt="">
+                        <div class="w_box">
+                            <span>프로방스가 숨겨왔던 비밀의 샘물</span>
+                            <p>그 동안 공개 되지 않은 프로방스의 지역의 진귀한 레오티에 샘물로 이루어진 아쿠에 레오티에 라인은 풍부한 미네랄 워터가 함유되어 피부에 넘치는 수분감을 선사합니다.</p>
+                            <a href="#">보러가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ex5">
+                <h4>이모르뗄 프레셔스</h4>
+                <div class="cont">
+                    <div class="l_img">
+                        <img src="images/sub2_5.jpg" alt="">
+                        <div class="w_box">
+                            <span>피부 스스로 완성하는 탄력의 힘</span>
+                            <p>지중해 연안 코르시카 섬에서 유기농으로 재배되는 ‘불멸의 꽃’이모르뗄을 원료로 하여, 피부 속 탄력뿐만 아니라 피부표면의 탄력까지 케어하여 촉촉하면서도 탄탄한 피부를 완성시켜 줍니다.</p>
+                            <a href="#">보러가기</a>
+                        </div>
+                    </div>
+                    <div class="goods">
+                        <ul>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_5_1.png" alt="">
+                                    <span>이모르뗄 프레셔스 크림</span>
+                                    <p>&#8361;90,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_5_2.png" alt="">
+                                    <span>이모르뗄 프레셔스 세럼</span>
+                                    <p>&#8361;95,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_5_3.png" alt="">
+                                    <span>이모르뗄 프레셔스 인리치드 워터</span>
+                                    <p>&#8361;39,000</p>
+                                </a>
+                            </li>
+                            <li class="items"><a href="#">
+                                    <img src="images/sub2_5_4.png" alt="">
+                                    <span>이모르뗄 프레셔스 에센셜 워터 </span>
+                                    <p>&#8361;36,000</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

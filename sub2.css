@@ -1,0 +1,236 @@
+html{
+    font-size: 62.5%;
+    font-family: "나눔스퀘어_ac","sans-serif";
+}
+body{
+    padding-top: 19rem;
+}
+/*                             main Start*/
+
+.main_ad{
+    position: relative;
+    width: 100%;
+    height: 48vh;
+    background: url("images/skin_main.jpg") no-repeat 0 0;
+}
+.ad_ex{
+    position: absolute;
+    top: 32rem; right: 15rem;
+    z-index: 30;
+}
+.ad_ex>h1{
+    font-family: "HCR Batang","sans-serif";
+    font-size: 4rem;
+    color: #2d2d2d;
+    padding-bottom: 5rem;
+}
+.ad_ex>p{
+    font-family: "NanumSquare_ac","sans-serif";
+    font-size: 1.7rem;
+    line-height: 4rem;
+}
+.sub_menu_box{
+    border-bottom: 1px solid #cccccc;
+}
+.sub_menu_box>ul{
+    width: 66vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sub_menu_box>ul>li{
+    
+}
+.sub_menu_box>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    color: #767676;
+    padding: 2.2rem 1rem;
+}
+.sub_menu_box>ul>li:hover>a:after{
+    position: absolute;
+    content: "";
+    left: 0; 
+    bottom: -0.3rem;
+    width: 100%; height: 2px; 
+    background:#a0a0a0;
+}
+.sub_menu_list.on>a:after{
+    position: absolute;
+    content: "";
+    left: 0; 
+    bottom: -0.3rem;
+    width: 100%; height: 2px; 
+    background:#a0a0a0;
+}
+.skina{
+    padding: 8rem 0;
+    text-align: center;
+}
+.skina>h2{
+    font-family: "HCR Batang","sans-serif";
+    font-size: 4.2rem;
+    font-weight: bold;
+}
+.best{
+    background: #f4f4ef;
+    
+}
+.b_m{
+    padding: 7rem 0;
+}
+.b_m>h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.b_m>h3>span{
+    font-size: 3rem;
+}
+.b_m>ul{
+    display: flex;
+    justify-content: space-between;
+    width: 66vw;
+    height: auto;
+    margin: 6rem auto 0;
+}
+.b_m>ul>li{
+    text-align: center;
+    background: #fff;
+}
+.b_m>ul>li:nth-of-type(1):hover{
+    background: rgba(217,198,165,0.7);
+    color: #fff;
+}
+.b_m>ul>li:hover .best_txt{
+    color: #fff;
+    font-weight: 600;
+}
+.b_m>ul>li:hover>a>p:nth-of-type(1), .b_m>ul>li:hover>a>p:nth-of-type(2){
+    color: #fff;
+}
+.b_m>ul>li:nth-of-type(2):hover{
+    background: rgba(232,158,33,0.7);
+    color: #fff;
+}
+.b_m>ul>li:nth-of-type(3):hover{
+    background: rgba(114,156,152,0.7);
+    color: #fff;
+}
+.white>img{
+    max-width: 40rem;
+}
+.best_txt{
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #000;
+}
+.b_m>ul>li>a>p:nth-of-type(1){
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #767676;
+    padding-top: 3rem;
+}
+.b_m>ul>li>a>p:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 3.5rem 0;
+    color: #000;
+}
+.main_ex{
+    width: 63vw;
+    margin: 0 auto;
+}
+.main_ex h4{
+    position:relative;
+    font-size: 2.6rem;
+    text-align: center;
+    line-height: 6rem;
+    padding-top: 7rem;
+}
+.main_ex h4:after{ 
+    content:""; 
+    position:absolute; 
+    left:calc(50% - 4.3rem); 
+    bottom: 0;
+    width:8.5rem; height:3px; 
+    background:#a0a0a0;
+}
+.main_ex .cont{
+    padding-top: 9rem;
+    overflow: hidden;
+}
+.l_img{
+    float: left;
+    position: relative;
+}
+.r_img{
+    float: right;
+    position: relative;
+}
+.w_box{
+    width: 45rem;
+    position: absolute;
+    top: calc(50% - 20.5rem); left: calc(50% - 22.4rem);
+    background: rgba(255,255,255,0.8) ;
+    margin: 0 auto;
+}
+.w_box>span{
+    display: block;
+    font-family: "해남체","sans-serif";
+    font-size: 2.6rem;
+    line-height: 4rem;
+    text-align: center;
+    padding-top: 7rem;
+}
+.w_box>p{
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    width: 35rem;
+    margin: 4.5rem auto;
+}
+.w_box>a{
+    display: block;
+    width: 50%;
+    margin: 5rem auto;
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    line-height: 4.5rem;
+    border: 1px solid rgba(160,160,160,0.8);
+    transition: all .5s ease-in-out;
+}
+.w_box>a:hover{
+    background: #fff;
+    font-weight: bold;
+}
+.goods{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.items{
+    width: 50%;
+    float: left;
+    padding-top: 1rem;
+}
+.items:nth-of-type(3){
+    clear: both;
+}
+.items>a>img{
+    width: 70%;s
+}
+.items>a>span{
+    display: block;
+    clear: both;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #000;
+}
+.items>a>p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #000;
+}
