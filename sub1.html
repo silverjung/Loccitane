@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sub1.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(document).ready(function() {
+                $(window).scroll( function(){
+                    $('.ima_2').each( function(i){
+                        var left_of_element = $(this).offset().top + $(this).outerHeight();
+                        var left_of_window = $(window).scrollTop() + $(window).height();
+            
+                        if( left_of_window > left_of_element ){
+                            $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+                        }
+                    });
+                    $('.ima_2_right').each( function(e){
+                        var right_of_element = $(this).offset().top + $(this).outerHeight();
+                        var right_of_window = $(window).scrollTop() + $(window).height();
+            
+                        if( right_of_window > right_of_element ){ 
+                            $(this).animate({'opacity':'1','margin-right':'0px'},1000);
+                        }
+                    });
+                });
+            });
+        });
+        
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://silverjung.github.io/loccitane/index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub1.html">록시땅 소개</a>
+                    <ul class="depth_2">
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅 약속</span><img src="images/nav1_1.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>뷰티 TIP</span><img src="images/nav1_2.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅의 원료</span><img src="images/nav1_3.jpg" alt=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub2.html">스킨케어</a>
+                    <ul class="depth_2">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">클렌져</a></li>
+                                <li><a href="#">토너</a></li>
+                                <li><a href="#">수분 &amp; 영양 크림</a></li>
+                                <li><a href="#">세럼 &amp; 오일</a></li>
+                                <li><a href="#">스크럽 &amp; 마스크</a></li>
+                                <li><a href="#">아이 케어 </a></li>
+                                <li><a href="#">자외선 차단제</a></li>
+                                <li><a href="#">미스트</a></li>
+                                <li><a href="#">립 케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav2_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">시어 라이트 컴포팅 크림 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub3.html">바디 &amp; 핸드케어</a>
+                    <ul class="depth_2">
+                        <li>
+                        <a href="#"><span>바디 케어</span><img src="images/nav3_1.jpg" alt=""></a>
+                        <a href="#"><span>핸드 케어</span><img src="images/nav3_2.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub4.html">헤어 케어</a>
+                    <ul class="depth_2 depth_hair">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">샴푸</a></li>
+                                <li><a href="#">컨디셔너</a></li>
+                                <li><a href="#">마스크 &amp; 트리트먼트</a></li>
+                                <li><a href="#">에코 리필</a></li>
+                                <li><a href="#">헤어 오일 &amp; 에센스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav4_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">아로마 리페어 샴푸 500ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub5.html">맨즈 케어</a>
+                    <ul class="depth_2 depth_man">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">스킨 케어</a></li>
+                                <li><a href="#">쉐이빙</a></li>
+                                <li><a href="#">배쓰 &amp; 샤워</a></li>
+                                <li><a href="#">바디 로션 &amp; 크림</a></li>
+                                <li><a href="#">향수</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav5_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">꺄드 에너자이징 페이스 플루이드 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub6.html">향수 &amp; 홈</a>
+                    <ul class="depth_2 per_depth">
+                        <li>
+                            <a href="#">
+                                <span>여성용 향수</span>
+                                <img src="images/nav6_1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>남성용 향수</span>
+                                    <img src="images/nav6_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>홈 컬렉션</span>
+                                <img src="images/nav6_3.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main"></div>
+        <div class="sub_main">
+            <h1>록시땅의 가치</h1>
+            <p>록시땅은 브랜드만의 빛나는 아름다움을 전하고자 프로방스가 선사하는 가장 최고의 것을 자랑스럽게 선보입니다.<br>
+            매일 숨이 멎을 듯 놀라움을 선사하는 자연 환경을 보존하기 위해 록시땅은 과거에도, 현재에도, 그리고 미래에도 최선을 다할 것입니다.</p>
+        </div>
+        <div class="p_box">
+            <div class="all_box">
+                <div class="one">
+                    <div class="ima">
+                        <img src="images/sub1_2.jpg" alt="여정" class="ima_2">
+                    </div>
+                    <div class="white">
+                        <span>프로방스에서 시작된 긴 여정</span>
+                        <p>록시땅의 여정은 프로방스의 작은 마켓에서 시작되었습니다.<br>
+                        23살의 올리비에 보쏭이라는 청년은 알람빅과 작은 트럭,<br>
+                        식물에 대한 깊은 이해와 지식만으로 로즈마리 에센셜 오일을<br>
+                        증류해 지역에서 판매하기 시작하였습니다.</p>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="white">
+                        <span>지속 가능성, 그 이상의 가치</span>
+                        <p>록시땅은 130명이 넘는 프랑스의 농부들과 10,000명이<br>
+                        넘는 작업자와 함께 공존하고 있습니다. <br>
+                        우리가 사용하는 원료는 최고의 퀄리티를 보장하며 <br>
+                        지속 가능성을 유지할 수 있도록 계속해서 노력하고 있습니다.</p>
+                    </div>
+                    <div class="ima">
+                        <img src="images/sub1_3.jpg" alt="가치" class="ima_2_right">
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="ima">
+                        <img src="images/sub1_4.jpg" alt="연구" class="ima_2">
+                    </div>
+                    <div class="white">
+                        <span>연구와 혁신</span>
+                        <p>자연에 대한 깊은 관찰은 록시땅의 획기적인 연구를 이끌고, <br>
+                        이는 효과적인 내추럴 화장품을 개발하는 데 주요한 역할을 합니다. <br>
+                        록시땅은 연구 분야에 집중 투자를 하며 마노스크(Manosque)의<br> 
+                        오뜨 프로방스 지역에 최신식 록시땅 연구소를 보유하고 있습니다. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w_box">
+            <div class="m_box">
+                <div class="top">
+                    <div class="ima2">
+                        <img src="images/sub1_5.jpg" alt="약속">
+                    </div>
+                    <div class="exp">
+                        <span>록시땅의 약속</span>
+                        <p>록시땅의 글로벌 커뮤니티는 2006년 설립된 록시땅 재단을<br>
+                        통해 사회에 환원하기 위해 노력하고 있습니다. <br>
+                        록시땅의 2가지 주요한 목표는 전세계의 시력 장애를 후원하고<br>
+                        부르키나 파소 여성들의 경제적 독립을 돕는 것입니다. 
+                        </p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="exp">
+                        <span>스파 록시땅</span>
+                        <p>테라피스트의 움직임, 기술 하나까지 모두 프로방스의<br>
+                        전통에서 배웠으며 록시땅 고유의 제품을 이용해<br>
+                        감각적인 텍스처를 선사합니다.<br>
+                        전세계적으로 유명한 휴양지와 특급 호텔에서<br>
+                        록시땅만의 스파 경험을 직접 즐겨보시기 바랍니다.</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                    <div class="ima2">
+                        <img src="images/sub1_6.jpg" alt="스파">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
