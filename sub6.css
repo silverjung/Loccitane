@@ -1,0 +1,217 @@
+html{
+    font-size: 62.5%;
+    font-family: "나눔스퀘어_ac","sans-serif";
+}
+body{
+    padding-top: 19rem;
+}
+.main_ad{
+    position: relative;
+    width: 100%;
+    height: 48vh;
+    background: url(images/perfume_main_ad.jpg) no-repeat 0 0 ;
+}
+.main_ad_txt{
+    position: absolute;
+    top: 10rem; left: 26rem;
+}
+.main_ad_txt>h2{
+    font-family: "함초롬바탕","sans-serif";
+    font-size: 5rem;
+    font-weight: bold;
+    color: #393939;
+}
+.main_ad_txt>p{
+    padding-top: 6rem;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: rgba(46,46,46,0.8);
+}
+.sub_menu_box{
+    border-bottom: 1px solid #cccccc;
+}
+.sub_menu_box>ul{
+    width: 66vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sub_menu_box>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    color: #767676;
+    padding: 2.2rem 1rem;
+}
+.sub_menu_box>ul>li:hover>a:after{
+    position: absolute;
+    content: "";
+    left: 0; 
+    bottom: -0.3rem;
+    width: 100%; height: 2px; 
+    background:#a0a0a0;
+}
+.sub_menu_list.on>a:after{
+    position: absolute;
+    content: "";
+    left: 0; 
+    bottom: -0.3rem;
+    width: 100%; height: 2px; 
+    background:#a0a0a0;
+}
+.best_menu{
+    width: 66vw;
+    margin: 7rem auto;
+}
+.best_menu>h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+.best_menu_box{
+    display: flex;
+    justify-content: space-between;
+}
+.best_menu_list>a{
+    display: block;
+    text-align: center;
+}
+.best_menu_list>a:hover>img{
+    transform:scale(1.1);
+    transition: transform .4s ease-in-out;
+}
+.best_menu_list>a>img{
+    width: 80%;
+    background: #f8f8f8;
+    transform:scale(1);
+    transition: transform .4s ease-in-out;
+}
+.best_menu_list>a>span{
+    display: block;
+}
+.best_menu_txt{
+    padding-top: 2.8rem;
+    font-size: 1.7rem;
+    color: rgba(54,54,54,0.9);
+}
+.best_menu_ml{
+    font-size: 1.3rem;
+    line-height: 4rem;
+    color: rgba(118,118,118,0.8);
+}
+.best_menu_list>a>strong{
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000;
+}
+.home_collection{
+    background: #fffaf4;
+    height: 115rem;
+}
+.home_collection>h3{
+    position: relative;
+    padding: 10rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0d0d0d;
+}
+.home_collection>h3:after{
+    content:""; 
+    position:absolute; 
+    left:calc(50% - 3.5rem); 
+    bottom: 8.5rem;
+    width:7rem; height:3px; 
+    background:#a0a0a0;
+}
+.home_contents{
+    position: relative;
+    width: 66vw;
+    margin: 0 auto;
+}
+.home_box{
+    position: absolute;
+    top: 12rem; left: 0;
+    width: 55%;
+    background: #faa5aa;
+    text-align: center;
+    padding: 13rem 0 9rem;
+    color: #fff;
+}
+.home_box>span{
+    display: block;
+    font-family: "해남체","sans-serif";
+    font-size: 2.8rem;
+}
+.home_box>p{
+    padding: 10rem 0;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+.home_box>a{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 4.8rem;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.home_img{
+    float: right;
+}
+.home_img>img{
+    width: 67rem;
+}
+.mans_perfume{
+    position: relative;
+    padding-bottom: 35rem;
+}
+.mans_perfume>h3{
+    position: relative;
+    padding: 10rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0d0d0d;
+}
+.mans_perfume>h3:after{
+    content:""; 
+    position:absolute; 
+    left:calc(50% - 3.5rem); 
+    bottom: 8.5rem;
+    width:7rem; height:3px; 
+    background:#a0a0a0;
+}
+.home_contents{
+    
+}
+.mans_box{
+    position: absolute;
+    top: 10rem; right: 0;
+    width: 55%;
+    background: #568795;
+    text-align: center;
+    padding: 12rem 0 8rem;
+    color: #fff;
+}
+.mans_box>span{
+    display: block;
+    font-family: "해남체","sans-serif";
+    line-height: 4.5rem;
+    font-size: 2.8rem;
+}
+.mans_box>p{
+    padding: 9rem 0;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+.mans_box>a{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 4.8rem;
+    border: 1px solid #fff;
+    color: #fff;
+}

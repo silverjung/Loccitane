@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sub6.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".sub_menu_list").click(function(e){
+                e.preventDefault();
+                $(this).addClass("on"); $(".sub_menu_list").not(this).removeClass("on");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://silverjung.github.io/loccitane/index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub1.html">록시땅 소개</a>
+                    <ul class="depth_2">
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅 약속</span><img src="images/nav1_1.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>뷰티 TIP</span><img src="images/nav1_2.jpg" alt=""></a></li>
+                        <li><a href="https://silverjung.github.io/loccitane/sub1.html"><span>록시땅의 원료</span><img src="images/nav1_3.jpg" alt=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub2.html">스킨케어</a>
+                    <ul class="depth_2">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">클렌져</a></li>
+                                <li><a href="#">토너</a></li>
+                                <li><a href="#">수분 &amp; 영양 크림</a></li>
+                                <li><a href="#">세럼 &amp; 오일</a></li>
+                                <li><a href="#">스크럽 &amp; 마스크</a></li>
+                                <li><a href="#">아이 케어 </a></li>
+                                <li><a href="#">자외선 차단제</a></li>
+                                <li><a href="#">미스트</a></li>
+                                <li><a href="#">립 케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav2_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">시어 라이트 컴포팅 크림 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub3.html">바디 &amp; 핸드케어</a>
+                    <ul class="depth_2">
+                        <li>
+                        <a href="#"><span>바디 케어</span><img src="images/nav3_1.jpg" alt=""></a>
+                        <a href="#"><span>핸드 케어</span><img src="images/nav3_2.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub4.html">헤어 케어</a>
+                    <ul class="depth_2 depth_hair">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">샴푸</a></li>
+                                <li><a href="#">컨디셔너</a></li>
+                                <li><a href="#">마스크 &amp; 트리트먼트</a></li>
+                                <li><a href="#">에코 리필</a></li>
+                                <li><a href="#">헤어 오일 &amp; 에센스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav4_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">아로마 리페어 샴푸 500ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub5.html">맨즈 케어</a>
+                    <ul class="depth_2 depth_man">
+                        <li>
+                            <ul class="depth_3">
+                                <li><a href="#">스킨 케어</a></li>
+                                <li><a href="#">쉐이빙</a></li>
+                                <li><a href="#">배쓰 &amp; 샤워</a></li>
+                                <li><a href="#">바디 로션 &amp; 크림</a></li>
+                                <li><a href="#">향수</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="images/nav5_2.jpg" alt="" class="depth_3_img">
+                                    <span class="depth_3_txt">꺄드 에너자이징 페이스 플루이드 50ML</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://silverjung.github.io/loccitane/sub6.html">향수 &amp; 홈</a>
+                    <ul class="depth_2 per_depth">
+                        <li>
+                            <a href="#">
+                                <span>여성용 향수</span>
+                                <img src="images/nav6_1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>남성용 향수</span>
+                                    <img src="images/nav6_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>홈 컬렉션</span>
+                                <img src="images/nav6_3.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_ad">
+            <div class="main_ad_txt">
+                <h2>PURFUME &amp; HOME</h2>
+                <p>록시땅의 향수(프래그런스)는 프랑스의 남부 지역 최고의<br>재료를 병에 담아 전문가의 손길을 거쳐 풍부한 역사와 <br>전설의 다양한 이야기를 전합니다. 록시땅의 다양한 향수로 새로운 기억을 만드세요. </p>
+            </div>
+        </div>
+        <div class="sub_menu_box">
+            <ul>
+                <li class="sub_menu_list"><a href="#">체리 블라썸</a></li>
+                <li class="sub_menu_list"><a href="#">피어니</a></li>
+                <li class="sub_menu_list"><a href="#">네롤리 &amp; 오키드</a></li>
+                <li class="sub_menu_list"><a href="#">아를레지엔느</a></li>
+                <li class="sub_menu_list"><a href="#">버베나</a></li>
+                <li class="sub_menu_list"><a href="#">에르베</a></li>
+                <li class="sub_menu_list"><a href="#">로즈</a></li>
+                <li class="sub_menu_list"><a href="#">홈 퍼퓸</a></li>
+            </ul>
+        </div>
+        <div class="best_menu">
+            <h3>Perfume &amp; Home Fragrance BEST</h3>
+            <ul class="best_menu_box">
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/perfume_1.png" alt="">
+                        <span class="best_menu_txt">버베나 오 드 뚜왈렛</span>
+                        <span class="best_menu_ml">100ml</span>
+                        <strong>&#8361;75,000</strong>
+                    </a></li>
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/perfume_2.png" alt="">
+                        <span class="best_menu_txt">에르베 오 드 퍼퓸</span>
+                        <span class="best_menu_ml">50ml</span>
+                        <strong>&#8361;94,000</strong>
+                    </a></li>
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/perfume_3.png" alt="">
+                        <span class="best_menu_txt">에르베 로 오 드 뚜왈렛</span>
+                        <span class="best_menu_ml">50ml</span>
+                        <strong>&#8361;85,000</strong>
+                    </a>
+                </li>
+                <li class="best_menu_list"><a href="#">
+                        <img src="images/perfume_4.png" alt="">
+                        <span class="best_menu_txt">아를레지엔느 오 드 뚜왈렛</span>
+                        <span class="best_menu_ml">100ml</span>
+                        <strong>&#8361;87,000</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="home_collection">
+            <h3>홈 컬렉션</h3>
+            <div class="home_contents">
+                <div class="home_box">
+                    <span>집안 가득 황홀한 향기를 채워보세요.</span>
+                    <p>아침에 프로방스 정원을 산책하며 은은한 꽃과<br>숲의 향기에 둘러 쌓여있는 모습을 상상해보세요.<br>방 안에 은은히 퍼지는 향만으로 여러분을 프로방스로<br>안내해줄 록시땅의 홈 컬렉션 제품을 만나보세요. </p>
+                    <a href="#">보러가기</a>
+                </div>
+                <div class="home_img">
+                    <img src="images/perfume_5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mans_perfume">
+            <h3>남성용 향수</h3>
+            <div class="home_contents">
+            <div class="mans_img">
+                <img src="images/perfume_6.jpg" alt="">
+            </div>
+            <div class="mans_box">
+                <span>진취적인 남자의 자유로움을<br>담은 아쿠아틱 노트 향</span>
+                <p>록시땅의 향수 컬렉션은 각각의 이야기와 전설 그리고<br>프로방스의 노래를 전합니다. 언제나 프로방스의 분위기를<br>담고 있으며 여러분 각자의 다른 스타일과 개성을 모두<br>표현할 수 있는 다양한 향기를 만나보세요.</p>
+                <a href="#">보러가기</a>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
