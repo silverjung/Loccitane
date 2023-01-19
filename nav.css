@@ -5,45 +5,71 @@ header{
     width: 100%;
     background: white;
 }
-.logo{
-    text-align: center;
-}
-.logo img{
-    margin: 3.4rem auto;
-}
-header>nav{
-    margin: 0 auto;
-    width: 62vw;
-}
-header>nav>ul{
+.navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 45px 50px;
 }
-header>nav>ul>li>a{
+.logo img{
+    width: 180px;
+}
+.navbar_menu{
+
+    display: flex;
+    padding-left: 0;
+}
+.navbar_menu>li{
+    padding: 5px 40px;
+}
+.navbar_util{
+    display: flex;
+}
+.navbar_util li{
+    padding: 0 12px;
+}
+.navbar_util li>a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+.txt{
+    position: absolute;
+}
+
+.navbar_menu>li>a{
     position: relative;
     display: block;
     font-size: 1.8rem;
     font-family: "서울한강체","sans-serif";
-    line-height: 7rem;
+    line-height: 3rem;
     color: #000;
     font-weight: 500;
 }
-header>nav>ul>li:hover>a:before{
+.navbar_menu>li:hover>a:before{
     content: "";
     position: absolute;
     left: calc(50% - 3rem);
-    bottom: 1.5rem;
+    bottom: 0;
     width: 6rem;
     height: 3px;
     background: #7f7f7f;
 }
-header>nav>ul>li:hover .depth_2{
+.navbar_menu>li:hover .depth_2{
     display: block;
 }
+.navbar_toogleBtn{
+    display: none;
+    position: absolute;
+    right: 28px;
+    font-size: 20px;
+    color: #010228;
+}
+
 .depth_2{
     display: none;
     position: absolute;
-    top: 19rem;
+    top: 10rem;
     overflow: hidden;
     background: rgba(255,255,255,0.9);
     border: 1px solid #e8e8e8;
@@ -99,4 +125,47 @@ header>nav>ul>li:hover .depth_2{
 }
 .depth_3_txt{
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 24px;
+    }
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu>li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_menu>li:hover .depth_2{
+        display: none;
+    }
+    .navbar_menu>li:hover{
+        background-color: whitesmoke;
+    }
+    .navbar_menu>li:hover>a:before{
+        display: none;
+    }
+    .navbar_util{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar_toogleBtn{
+        display: block;
+        position: absolute;
+        right: 28px;
+        font-size: 20px;
+        color: #010228;
+    }
+    .navbar_menu.active,
+    .navbar_util.active{
+        display: flex;
+    }
 }

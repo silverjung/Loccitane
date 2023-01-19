@@ -3,7 +3,7 @@ html{
     font-family: "나눔스퀘어_ac","sans-serif";
 }
 body{
-    padding-top: 19rem;
+    padding-top: 14rem;
 }
 input[type='text']{
     border: 0;
@@ -12,22 +12,6 @@ input[type='text']{
     outline-style: none;
     background-color: transparent;
 }
-.util{
-    position: absolute;
-    top: 4rem; right: 0;
-}
-.util li{
-    float: left;
-    padding-right: 2.5rem;
-}
-.util li>a{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #000;
-}
-.txt{
-    position: absolute;
-}
 /*                                    header End*/
 /*                   main Start*/
 .main1{
@@ -35,10 +19,11 @@ input[type='text']{
     height: 56vh;
 }
 .main_first{
-    position: absolute;
     width: 100%;
     height: 100%;
     background: url("images/header2.jpg") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
 }
 .ad_m{
     position: absolute;
@@ -73,7 +58,7 @@ input[type='text']{
 }
 .sub_ad{
     position: absolute;
-    left: calc(50% - 50rem); bottom: -7rem;
+    left: calc(50% - 50rem); bottom: -9rem;
     margin: 0 auto;
     padding: 3rem 4rem;
     z-index: 100;
@@ -143,14 +128,13 @@ input[type='text']{
     line-height: 1.8rem;
 }
 .spe{
-    height: 159.8rem;
     background-color: #f7f7f7;
 }
 .spe>h1{
     font-family: "Garamond","sans-serif";
     font-weight: bold;
     font-size: 2.5rem;
-    padding-top: 30.4rem;
+    padding-top: 24.4rem;
     text-align: center;
 }
 .gift_img>img{
@@ -166,13 +150,12 @@ input[type='text']{
 .a_box{
     width: 60vw;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding: 2rem 0 20rem 0;
 }
 .a_box>ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 42.6rem;
     font-family: "NanumSquare_ac","sans-serif";
 }
 .gift_img{
@@ -206,9 +189,6 @@ input[type='text']{
     bottom: 0;
     width:6rem; height:3px; 
     background:#233ca7;
-}
-.collec{
-    
 }
 .collec>.yel_box{
     position: relative;
@@ -465,4 +445,91 @@ footer{
 .footer_copy>address{
     font-size: 1.4rem;
     line-height: 2rem;
+}
+
+@media screen and (max-width: 767px){
+    .ad_m{
+        position: static;
+        text-align: center;
+        padding: 150px 0;
+    }
+    .ad_m>h1{
+        font-size: 3.3rem;
+        text-align: center;
+        margin-bottom: 3.8rem;
+        color: #f7f7f7;
+    }
+    .ad_m>a{
+        margin: auto;
+        color: #fff;
+    }
+    .ad_m>p{
+        display: none;
+    }
+    .sub_ad{
+        display: none;
+    }
+    .collec{
+        display: none;
+    }
+    .spe>h1{
+        padding-top: 16.4rem;
+    }
+    .a_box{
+        padding: 2rem 0 10rem 0;
+    }
+    .best{
+        width: 100%;
+        margin: 10rem 0;
+    }
+    .sel_box>ul{
+        flex-direction: column;
+    }
+    .sel_box>ul>li{
+        width: 100%;
+    }
+    .first_pro>img{
+        width: 45%;
+        left: 8.3rem;
+    }
+    .sec_pro>img{
+        width: 60%;
+        left: 7.5rem;
+    }
+    .thir_pro>img{
+        width: 70%;
+        left: 5rem;
+    }
+    .four_pro>img{
+        width: 40%;
+        left: 9.5rem;
+    }
+    .gift{
+        display: none;
+    }
+    .event{
+        display: none;
+    }
+    .welcome>.mist{
+        padding: 2rem 1.6rem;
+    }
+    .welcome>img{
+        padding: 0%;
+    }
+    .b_logo{
+        padding: 6rem 0;
+    }
+    .footer_copy{
+        padding: 1rem 0;
+    }
+    .footer_phone{
+        font-size: 2rem;
+    }
+    .footer_num {
+        padding-bottom: 2rem;
+    }
+    .footer_copy>address{
+        font-size: 0.4rem;
+        line-height: 1rem;
+    }
 }
